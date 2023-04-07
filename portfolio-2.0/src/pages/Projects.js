@@ -6,7 +6,7 @@ function Projects() {
         <section className="projects-section bg-dark" id="projects">
 
             <div className="container px-4 px-lg-5">
-                <h2 className="text-white mb-4">Projects</h2>
+                <h2 className="text-white mb-4 heading">Projects</h2>
                 <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div className="col-xl-8 col-lg-7 image-gallery"><img class="img-fluid mb-3 mb-lg-0"
                         src="../img/bg-masthead.jpg" alt="..." /></div>

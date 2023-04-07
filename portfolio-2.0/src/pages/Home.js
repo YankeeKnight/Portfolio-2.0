@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/styles.css';
-// import { Link } from 'react-router-dom';
+import '../pages/About';
 
 export default function Home() {
     return (
@@ -11,7 +11,7 @@ export default function Home() {
                         <h1 className="mx-auto my-0 mb-5 text-uppercase my-name">Emmanuel Rivera</h1>
                         <h2 className="text-white-50 mx-auto mt-2 mb-5">A Full Stack Developer with a background in graphics,
                             communications and technology.</h2>
-                        <a className="btn btn-primary" href="#about">Learn More</a>
+                        <a className="btn btn-primary" role="button" href="/About">Learn More</a>
                     </div>
                 </div>
             </div>
