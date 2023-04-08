@@ -5,54 +5,44 @@ function Projects() {
     return (
         <section className="projects-section bg-dark" id="projects">
 
-            <div className="container px-4 px-lg-5">
+            <div className="main-projects">
                 <h2 className="text-white mb-4 heading">Projects</h2>
-                <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div className="col-xl-8 col-lg-7 image-gallery"><img class="img-fluid mb-3 mb-lg-0"
-                        src="../img/bg-masthead.jpg" alt="..." /></div>
-                    <div className="col-xl-4 col-lg-5">
-                        <div className="featured-text text-center text-lg-left">
-                            <h4>Project X</h4>
-                            <p className="text-black-50 mb-0">Web App</p>
-                        </div>
+                <div className="project-wrapper">
+                    <div>
+                        <ul>
+                            <li><a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">
+                                <span>Beats & Eats</span> </a>
+                            </li>
+                            <li><a rel="noopener" target="_blank"
+                                href="https://bayjs.org"> <span>ReciBeet</span> </a>
+                            </li>
+                            <li><a rel="noopener"
+                                target="_blank" href="https://cookiemunch.dunks1980.com">
+                                <span>Coming Soon</span> </a>
+                            </li>
+                            <li><a rel="noopener" target="_blank"
+                                href="https://screentimeconverter.com"> <span>Coming Soon</span> </a>
+                            </li>
+                            <li><a rel="noopener" target="_blank" href="https://inlinesvg.dunks1980.com/">
+                                <span>Coming Soon</span> </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div className="row gx-0 mb-5 mb-lg-0 justify-content-center image-gallery">
-                    <div className="col-lg-6"><a href="https://shobannah.github.io/BeatsAndEats/" target="_blank" rel="noreferrer"><img
-                        className="img-fluid" src="../img/beatsandeats.png" alt="..." /></a></div>
-                    <div className="col-lg-6">
-                        <div className="bg-black text-center h-100 project">
-                            <div className="d-flex h-100">
-                                <div className="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 className="text-white">Beats & Eats</h4>
-                                    <p className="mb-0 text-white-50">A web app created with HTML, CSS, and JavaScript
-                                        leveraging APIs.</p>
-                                    <hr className="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Beats & Eats</h5>
+                        <p class="card-text">A web app created with HTML, CSS, and JavaScript leveraging APIs.</p>
                     </div>
-                </div>
-
-                <div className="row gx-0 justify-content-center image-gallery">
-                    <div className="col-lg-6"><a href="https://recibeet-2.herokuapp.com/" target="_blank" rel="noreferrer"><img class="img-fluid"
-                        src="../img/recibeet.png" alt="..." /></a></div>
-                    <div className="col-lg-6 order-lg-first">
-                        <div className="bg-black text-center h-100 project">
-                            <div className="d-flex h-100">
-                                <div className="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 className="text-white">ReciBeet</h4>
-                                    <p className="mb-0 text-white-50">A web app created with HTML, CSS, and JavaScript
-                                        leveraging custom APIs and using HandleBars. Deployed on Heroku.</p>
-                                    <hr className="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
+                    <img class="card-img-top" src="../img/beatsandeats.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <button> <a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">View App</a></button>
+                        <button><a rel="noopener" target="_blank" href="https://github.com/shobannah/BeatsAndEats">View GitHub</a></button>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 

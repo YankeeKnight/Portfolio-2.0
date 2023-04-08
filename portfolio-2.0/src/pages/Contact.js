@@ -3,9 +3,9 @@ import '../styles/styles.css';
 
 function Contact() {
     return (
-        <div className="contact">
-            <h2 className="text-white mb-4 heading">Reach Out</h2>
-            <div className="container py-4">
+        <div className="projects-section bg-dark">
+            <h2 className="text-white mb-4 headingCon">Reach Out</h2>
+            <div className="container text-white py-4">
 
                 <form id="contactForm">
 

@@ -6,6 +6,7 @@ import Projects from "../src/pages/Projects";
 import Contact from "../src/pages/Contact";
 import Footer from "../src/components/Footer";
 import Socials from "../src/components/Socials";
+import Resume from "../src/pages/Resume";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
         if (currentPage === 'Contact') {
             return <Contact />;
         }
+        if (currentPage === 'Resume') {
+            return <Resume />;
+        }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -39,6 +43,7 @@ export default function App() {
                 <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
             </div>
             <Routes>
+                <Route path='/' element={<Home />} />
                 <Route path="/About" element={<About />} />
             </Routes>
 

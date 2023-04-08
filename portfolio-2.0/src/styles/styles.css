@@ -94,17 +94,59 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.image-gallery img {
+/* .image-gallery img {
     filter: brightness(50%);
 }
 
 .image-gallery img:hover {
     filter: none;
+} */
+
+.main-projects {
+    margin-left: 4rem;
+
 }
 
 .me {
     height: 320px;
     width: 320px;
+}
+
+.card {
+    width: 35rem;
+    margin-left: 25rem;
+    border: hidden !important;
+    background-color: transparent !important;
+    color: white;
+}
+
+.card img {
+    width: 18rem;
+    margin-left: 1rem;
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--bs-red) !important;
+}
+
+.project-wrapper a {
+    text-underline-offset: 0.5rem;
+}
+
+.project-wrapper li {
+    padding-top: 1rem;
+}
+
+.project-wrapper span {
+    color: white;
+}
+
+.project-wrapper span:hover {
+    color: red;
 }
 
 hr {
@@ -116,6 +158,11 @@ hr {
 
 hr:not([size]) {
     height: 1px;
+}
+
+.resumeDL {
+    float: right;
+    margin-right: 40rem;
 }
 
 h6,
@@ -142,7 +189,11 @@ h1,
 }
 
 .heading {
-    margin-left: 3rem;
+    margin-left: 1rem;
+}
+
+.headingCon {
+    margin-left: 5rem;
 }
 
 @media (min-width: 1200px) {
