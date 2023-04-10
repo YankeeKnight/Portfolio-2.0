@@ -112,9 +112,18 @@ body {
     width: 320px;
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.move {
+    margin-left: 50px;
+}
+
 .card {
     width: 35rem;
     margin-left: 25rem;
+    margin-top: -210px;
     border: hidden !important;
     background-color: transparent !important;
     color: white;
@@ -719,6 +728,13 @@ progress {
 
 .blockquote-footer::before {
     content: "— ";
+}
+
+.contactBack {
+    background-image: url(../../public/img/contact.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .img-fluid {

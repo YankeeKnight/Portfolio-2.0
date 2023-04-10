@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 function Contact() {
     return (
-        <div className="projects-section bg-dark">
+        <div className="projects-section bg-dark contactBack">
             <h2 className="text-white mb-4 headingCon">Reach Out</h2>
             <div className="container text-white py-4">
 
@@ -33,7 +33,6 @@ function Contact() {
                     </div>
 
                 </form>
-
             </div>
         </div>
     );

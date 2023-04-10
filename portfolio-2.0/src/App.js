@@ -43,7 +43,6 @@ export default function App() {
                 <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
             </div>
             <Routes>
-                <Route path='/' element={<Home />} />
                 <Route path="/About" element={<About />} />
             </Routes>
 

@@ -16,7 +16,7 @@ function About() {
                             Strengths in project management, high paced multitasking, employee engagement and fluency in
                             Spanish.
                         </p>
-                        <img className="img-fluid" src="../img/aboutback.png" alt="..." />
+                        <img className="img-fluid" src="../img/aboutback.png" alt="laptop screen" />
                     </div>
                 </div>
 
