@@ -137,12 +137,21 @@ body {
     margin-left: 1rem;
 }
 
-.card button {
+.card-body button {
     background-color: transparent;
     border: none;
+
+}
+
+.card-body a {
+    color: #fff;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: var(--bs-red) !important;
+}
+
+.card-body a:hover {
+    color: var(--bs-red);
 }
 
 @media (min-width: 992px) {
@@ -174,6 +183,7 @@ body {
 
 .project-wrapper a {
     text-underline-offset: 0.5rem;
+    text-decoration-color: var(--bs-red);
 }
 
 .project-wrapper li {
@@ -12860,11 +12870,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 100%;
     line-height: 5rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
 
 .social a:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--bs-red);
 }
 
 .social a:active {
@@ -12873,4 +12883,10 @@ body {
 
 .footer {
     padding: 5rem 0;
+}
+
+.proj {
+    background-image: url(../../public/img/compCode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

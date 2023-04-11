@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 function Resume() {
     return (
-        <section className="projects-section bg-dark" id="projects">
+        <section className="projects-section bg-dark proj" id="projects">
             <div>
                 <a className="btn btn-primary resumeDL" role="button" href="../img/Emmanuel Rivera Resume Aug 2022 V3.pdf" download="Emmanuel Rivera's Resume" target="_blank">Download Resume</a>
             </div>
