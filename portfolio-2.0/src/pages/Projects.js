@@ -30,7 +30,7 @@ function Projects() {
                     <h5 class="card-title">Beats & Eats</h5>
                     <p class="card-text">A web app created with HTML, CSS, and JavaScript leveraging APIs.</p>
                 </div>
-                <img class="card-img-top" src="/img/beatsandeats.png" alt="Card image cap" />
+                <img class="card-img-top" src="Portfolio-2.0/img/beatsandeats.png" alt="Card image cap" />
                 <div class="card-body">
                     <button> <a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">View
                         App</a></button>
