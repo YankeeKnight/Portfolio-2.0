@@ -11,16 +11,11 @@ function Projects() {
                         <li><a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">
                             <span>Beats & Eats</span> </a>
                         </li>
-                        <li><a rel="noopener" target="_blank" href="https://bayjs.org"> <span>ReciBeet</span> </a>
+                        <li><a rel="noopener" target="_blank" href="https://recibeet-2.herokuapp.com/"> <span>ReciBeet</span> </a>
                         </li>
-                        <li><a rel="noopener" target="_blank" href="https://cookiemunch.dunks1980.com">
-                            <span>Coming Soon</span> </a>
-                        </li>
-                        <li><a rel="noopener" target="_blank" href="https://screentimeconverter.com"> <span>Coming Soon</span> </a>
-                        </li>
-                        <li><a rel="noopener" target="_blank" href="https://inlinesvg.dunks1980.com/">
-                            <span>Coming Soon</span> </a>
-                        </li>
+                        <li><span>Coming Soon</span></li>
+                        <li><span>Coming Soon</span></li>
+                        <li><span>Coming Soon</span></li>
                     </ul>
                 </div>
             </div>
