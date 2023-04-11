@@ -5,7 +5,7 @@ function Navbar({ currentPage, handlePageChange }) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div className="container px-4 px-lg-5">
-                <a className="navbar-brand" href="/">My Profile</a>
+                <a className="navbar-brand" href={process.env.PUBLIC_URL + '/'}>My Profile</a>
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">

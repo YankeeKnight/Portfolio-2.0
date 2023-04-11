@@ -8,7 +8,7 @@ function About() {
             <div className="container px-4 px-lg-5">
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-lg-8">
-                        <img className="rounded-circle me" src="../img/headshot.PNG" alt="Manny Rivera" />
+                        <img className="rounded-circle me" src={process.env.PUBLIC_URL + '/img/headshot.PNG'} alt="Manny Rivera" />
                         <h2 className="text-white mb-4">About Me</h2>
                         <p className="text-white-50">
                             A Full Stack Developer with a background in graphics, communications and technology. Passionate
@@ -16,7 +16,7 @@ function About() {
                             Strengths in project management, high paced multitasking, employee engagement and fluency in
                             Spanish.
                         </p>
-                        <img className="img-fluid" src="../img/aboutback.png" alt="laptop screen" />
+                        <img className="img-fluid" src={process.env.PUBLIC_URL + '/img/aboutback.png'} alt="laptop screen" />
                     </div>
                 </div>
 
