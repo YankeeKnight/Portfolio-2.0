@@ -120,10 +120,13 @@ body {
     margin-left: 50px;
 }
 
+
+
 .card {
-    width: 35rem;
-    margin-left: 25rem;
-    margin-top: -210px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    width: 25rem;
     border: hidden !important;
     background-color: transparent !important;
     color: white;
@@ -140,6 +143,33 @@ body {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: var(--bs-red) !important;
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 40rem;
+        margin-left: 25rem;
+        margin-top: -210px;
+
+    }
+}
+
+@media (min-width: 576px) {
+    .card {
+        width: 20rem;
+        margin-left: 15rem;
+        margin-top: -210px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 25rem;
+        margin-left: 25rem;
+        margin-top: -210px;
+
+    }
 }
 
 .project-wrapper a {
@@ -170,8 +200,39 @@ hr:not([size]) {
 }
 
 .resumeDL {
-    float: right;
-    margin-right: 40rem;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 4rem;
+}
+
+@media (min-width: 1085px) {
+    .resumeDL {
+        float: right;
+        margin-right: 20rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .resumeDL {
+        float: right;
+        margin-right: 40rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .resumeDL {
+        float: right;
+        margin-bottom: 20px;
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .resumeDL {
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 40rem;
+    }
 }
 
 h6,
@@ -12580,14 +12641,14 @@ body {
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: #fff;
+    background-color: var(--bs-gray-500);
 }
 
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: #64a19d;
-    border: 1px solid #64a19d;
+    color: var(--bs-red);
+    border: 1px solid var(--bs-body-bg);
 }
 
 #mainNav .navbar-toggler:focus {
