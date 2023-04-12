@@ -7,7 +7,7 @@ function Contact() {
             <h2 className="text-white mb-4 headingCon">Reach Out</h2>
             <div className="container text-white py-4">
 
-                <form id="contactForm" action="https://getform.io/f/6bd6ad41-3a0f-4408-8f25-5d369abfc41a" method="POST">
+                <form id="contactForm" action="https://getform.io/f/6bd6ad41-3a0f-4408-8f25-5d369abfc41a" method="POST" onsubmit="this.submit(); this.reset(); return false;">
 
 
                     <div className="mb-3">
