@@ -124,7 +124,7 @@ body {
 
 .card {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: auto;
     width: 25rem;
     border: hidden !important;
@@ -154,11 +154,27 @@ body {
     color: var(--bs-red);
 }
 
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #343a40 !important;
+    color: white !important;
+    margin-left: 3rem !important;
+
+}
+
+option {
+    font-size: 14px;
+    background-color: #343a40 !important;
+    color: white !important;
+}
+
 @media (min-width: 992px) {
     .card {
         width: 40rem;
         margin-left: 25rem;
-        margin-top: -210px;
 
     }
 }
@@ -167,7 +183,6 @@ body {
     .card {
         width: 20rem;
         margin-left: 15rem;
-        margin-top: -210px;
 
     }
 }
@@ -176,7 +191,6 @@ body {
     .card {
         width: 25rem;
         margin-left: 25rem;
-        margin-top: -210px;
 
     }
 }

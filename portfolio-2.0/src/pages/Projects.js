@@ -1,50 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import BandE from '../components/BandE';
+import Recibeet from '../components/Recibeet';
 import '../styles/styles.css';
+import PlushiNet from '../components/PlushiNet';
+import ProjPick from '../components/ProjPick';
 
 function Projects() {
+    const [currentComponent, setCurrentComponent] = useState("component");
+
+    const handleComponentChange = (event) => {
+        setCurrentComponent(event.target.value);
+    };
+
+    const renderComponent = () => {
+        switch (currentComponent) {
+            case "BandE":
+                return <BandE />;
+            case "Recibeet":
+                return <Recibeet />;
+            case "PlushiNet":
+                return <PlushiNet />
+            default:
+                return <ProjPick />;
+        }
+    };
+
     return (
         <section class="projects-section bg-dark" id="projects">
             <h2 className="text-white mb-4 headingCon">Projects</h2>
             <div className="project-wrapper move">
                 <div>
-                    <ul>
-                        <li><a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">
-                            <span>Beats & Eats</span> </a>
-                        </li>
-                        <li><a rel="noopener" target="_blank" href="https://recibeet-2.herokuapp.com/"> <span>ReciBeet</span> </a>
-                        </li>
-                        <li><span>Coming Soon</span></li>
-                        <li><span>Coming Soon</span></li>
-                        <li><span>Coming Soon</span></li>
-                    </ul>
+                    <select onChange={handleComponentChange} value={currentComponent}>
+                        <option value="defualt">Pick A Project</option>
+                        <option value="BandE">Beats & Eats</option>
+                        <option value="Recibeet">Recibeet</option>
+                        <option value="PlushiNet">PlushiNet</option>
+                    </select>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Beats & Eats</h5>
-                    <p class="card-text">A web app created with HTML, CSS, and JavaScript leveraging APIs.</p>
-                </div>
-                <img class="card-img-top" src={process.env.PUBLIC_URL + '/img/beatsandeats.png'} alt="Beats & Eats" />
-                <div class="card-body">
-                    <button> <a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">View
-                        App</a></button>
-                    <button><a rel="noopener" target="_blank" href="https://github.com/shobannah/BeatsAndEats">View
-                        GitHub</a></button>
-                </div>
-            </div>
-            <div class="card hide">
-                <div class="card-body">
-                    <h5 class="card-title">ReciBeet</h5>
-                    <p class="card-text">A web app created with HTML, CSS, and JavaScript leveraging APIs.</p>
-                </div>
-                <img class="card-img-top" src="../img/recibeet.png" alt="Card image cap" />
-                <div class="card-body">
-                    <button> <a rel="noopener" target="_blank" href="https://shobannah.github.io/BeatsAndEats/">View
-                        App</a></button>
-                    <button><a rel="noopener" target="_blank" href="https://github.com/shobannah/BeatsAndEats">View
-                        GitHub</a></button>
-                </div>
+            <div>
+                {renderComponent()}
             </div>
         </section>
     );
